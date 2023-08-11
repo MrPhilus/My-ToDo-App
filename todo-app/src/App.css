@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+body {
+  margin-top: 3rem;
+}
+
+.App {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: auto;
+  text-align: left;
+  word-break: break-all;
+}
+
+.input {
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  text-align: right;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+}
+.input:focus {
+  border: none;
+  outline: none;
+}
+
+.inputArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  width: 100%;
+  margin: 1rem;
+}
+
+.inputButton {
+  width: 4rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+}
+.inputButton:hover {
+  transform: scale(1.2);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(39, 205, 39);
+  width: 100%;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.taskItem {
+  width: 100%;
+  padding: 1rem;
+}
+
+.listItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.listBox {
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.listBox::-webkit-scrollbar {
+  width: 16px; /* width of the entire scrollbar */
+}
+
+.listBox::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 20px; /* color of the tracking area */
+}
+
+.listBox::-webkit-scrollbar-thumb {
+  background-color: black; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.filters {
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  outline: 1px solid black;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters > button {
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+.filters > button:focus {
+  text-decoration: underline;
+}
+.filters > button:hover {
+  transform: scale(1.2);
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.editButton {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+.editButton:hover {
+  transform: scale(1.2);
+}
+
+.markDone {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+}
+.checkBox {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+}
