@@ -99,7 +99,7 @@ body {
 .filters {
   padding: 1rem;
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
   outline: 1px solid black;
   width: 100%;
   justify-content: center;

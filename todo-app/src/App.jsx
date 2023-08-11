@@ -114,6 +114,8 @@ function App() {
     setShowPending(true);
   }
 
+  const itemsLeft = list.length;
+
   return (
     <div className="App">
       <div className="inputArea">
@@ -185,6 +187,13 @@ function App() {
         })}
       </div>
       <div className="filters">
+        <div>
+          {itemsLeft == 1 ? (
+            <p>{itemsLeft} task left</p>
+          ) : (
+            <p>{itemsLeft} tasks left</p>
+          )}
+        </div>
         <button onClick={displayAll}>All</button>
         <button onClick={displayPending}>Pending</button>
         <button onClick={displayCompleted}>Completed</button>
